@@ -1,0 +1,14 @@
+name: bus_map
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9 
+  - streamlit
+  - requests
+  - pandas
+  - geopandas
+  - geocoder
+  - protobuf
+  - streamlit-folium
+  - google-transit
