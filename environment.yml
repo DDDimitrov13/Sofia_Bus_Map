@@ -12,3 +12,4 @@ dependencies:
   - protobuf
   - streamlit-folium
   - google-transit
+  - python-gtfs-realtime-bindings
