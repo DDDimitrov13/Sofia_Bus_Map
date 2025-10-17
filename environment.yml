@@ -1,4 +1,4 @@
-name: bus_map
+name: my_gtfs_app
 channels:
   - conda-forge
   - defaults
@@ -10,6 +10,6 @@ dependencies:
   - geopandas
   - geocoder
   - protobuf
-  - streamlit-folium
-  - google-transit
-  - python-gtfs-realtime-bindings
+  - python-gtfs-realtime-bindings 
+  - pip:
+    - streamlit-folium
