@@ -1,9 +1,0 @@
-streamlit
-requests
-pandas
-geopandas
-folium
-geocoder
-google-transit
-leafmap
-streamlit-folium
