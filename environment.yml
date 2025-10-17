@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.9 
+  - python=3.11 
   - streamlit
   - requests
   - pandas
@@ -13,3 +13,4 @@ dependencies:
   - python-gtfs-realtime-bindings 
   - pip:
     - streamlit-folium
+
