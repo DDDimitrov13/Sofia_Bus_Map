@@ -3,19 +3,13 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  # Force a stable Python version
   - python=3.9 
-  
-  # KEEP ONLY GEOSPATIAL CORE HERE - these MUST be conda-forge
+  - streamlit
+  - requests
+  - pandas
   - geopandas
-  
-  # ALL OTHER PACKAGES GO TO PIP
+  - geocoder
+  - protobuf
+  - python-gtfs-realtime-bindings 
   - pip:
-    - streamlit
-    - requests
-    - pandas
-    - geocoder
-    - protobuf
     - streamlit-folium
-    # CRITICAL: Use the PyPI package name directly here
-    - gtfs-realtime-pb2
