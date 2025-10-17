@@ -3,18 +3,19 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  # Force a stable Python version (3.9 or 3.10) for compatibility
+  # Force a stable Python version
   - python=3.9 
-  # Core Conda-Forge packages for stability
-  - streamlit
-  - requests
-  - pandas
-  - geopandas
-  - geocoder
-  - protobuf
   
-  # Use the pip section for the GTFS library and the Streamlit component
+  # KEEP ONLY GEOSPATIAL CORE HERE - these MUST be conda-forge
+  - geopandas
+  
+  # ALL OTHER PACKAGES GO TO PIP
   - pip:
-    # This is the actual PyPI package name that provides the 'google.transit' module
-    - gtfs-realtime-pb2 
+    - streamlit
+    - requests
+    - pandas
+    - geocoder
+    - protobuf
     - streamlit-folium
+    # CRITICAL: Use the PyPI package name directly here
+    - gtfs-realtime-pb2
